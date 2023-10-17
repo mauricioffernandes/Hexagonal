@@ -30,6 +30,7 @@ public class EnderecoController {
         return ResponseEntity.ok().build();
     }
 
+
     @GetMapping("/{id")
     public ResponseEntity<CustomerResponse> findById(@PathVariable final String id){
         var customer = findCustomerByIdInputPort.find(id);
